@@ -13,6 +13,13 @@
 		EB400ED32817ACE00085787D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB400ED12817ACE00085787D /* Main.storyboard */; };
 		EB400ED52817ACE20085787D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB400ED42817ACE20085787D /* Assets.xcassets */; };
 		EB400ED82817ACE20085787D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB400ED62817ACE20085787D /* LaunchScreen.storyboard */; };
+		EB400EE12817AED70085787D /* ChineseQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB400EE02817AED70085787D /* ChineseQuestion.swift */; };
+		EB400EE32817AF3B0085787D /* EnglishQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB400EE22817AF3B0085787D /* EnglishQuestion.swift */; };
+		EB400EE52817F87B0085787D /* ChineseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB400EE42817F87B0085787D /* ChineseViewController.swift */; };
+		EB400EE72817F8A20085787D /* EnglishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB400EE62817F8A20085787D /* EnglishViewController.swift */; };
+		EB400EE92817F8D90085787D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB400EE82817F8D90085787D /* ResultViewController.swift */; };
+		EB400EEB28183ABF0085787D /* QAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB400EEA28183ABF0085787D /* QAModel.swift */; };
+		EB400EED28183F430085787D /* QuestionStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB400EEC28183F430085787D /* QuestionStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		EB400ED42817ACE20085787D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB400ED72817ACE20085787D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB400ED92817ACE20085787D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB400EE02817AED70085787D /* ChineseQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseQuestion.swift; sourceTree = "<group>"; };
+		EB400EE22817AF3B0085787D /* EnglishQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishQuestion.swift; sourceTree = "<group>"; };
+		EB400EE42817F87B0085787D /* ChineseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseViewController.swift; sourceTree = "<group>"; };
+		EB400EE62817F8A20085787D /* EnglishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishViewController.swift; sourceTree = "<group>"; };
+		EB400EE82817F8D90085787D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		EB400EEA28183ABF0085787D /* QAModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAModel.swift; sourceTree = "<group>"; };
+		EB400EEC28183F430085787D /* QuestionStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +72,44 @@
 			children = (
 				EB400ECB2817ACE00085787D /* AppDelegate.swift */,
 				EB400ECD2817ACE00085787D /* SceneDelegate.swift */,
-				EB400ECF2817ACE00085787D /* ViewController.swift */,
-				EB400ED12817ACE00085787D /* Main.storyboard */,
 				EB400ED42817ACE20085787D /* Assets.xcassets */,
 				EB400ED62817ACE20085787D /* LaunchScreen.storyboard */,
+				EB400ED12817ACE00085787D /* Main.storyboard */,
 				EB400ED92817ACE20085787D /* Info.plist */,
+				EB400EEF2818703A0085787D /* controller */,
+				EB400EEE281870160085787D /* Model */,
+				EB400EDF2817AEBA0085787D /* QuestionData */,
 			);
 			path = "Work_Chinese&EnglishWords";
+			sourceTree = "<group>";
+		};
+		EB400EDF2817AEBA0085787D /* QuestionData */ = {
+			isa = PBXGroup;
+			children = (
+				EB400EE22817AF3B0085787D /* EnglishQuestion.swift */,
+				EB400EE02817AED70085787D /* ChineseQuestion.swift */,
+				EB400EEC28183F430085787D /* QuestionStruct.swift */,
+			);
+			path = QuestionData;
+			sourceTree = "<group>";
+		};
+		EB400EEE281870160085787D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB400EEA28183ABF0085787D /* QAModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB400EEF2818703A0085787D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB400ECF2817ACE00085787D /* ViewController.swift */,
+				EB400EE42817F87B0085787D /* ChineseViewController.swift */,
+				EB400EE62817F8A20085787D /* EnglishViewController.swift */,
+				EB400EE82817F8D90085787D /* ResultViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB400EE52817F87B0085787D /* ChineseViewController.swift in Sources */,
+				EB400EE32817AF3B0085787D /* EnglishQuestion.swift in Sources */,
+				EB400EE72817F8A20085787D /* EnglishViewController.swift in Sources */,
+				EB400EEB28183ABF0085787D /* QAModel.swift in Sources */,
+				EB400EE92817F8D90085787D /* ResultViewController.swift in Sources */,
 				EB400ED02817ACE00085787D /* ViewController.swift in Sources */,
+				EB400EED28183F430085787D /* QuestionStruct.swift in Sources */,
+				EB400EE12817AED70085787D /* ChineseQuestion.swift in Sources */,
 				EB400ECC2817ACE00085787D /* AppDelegate.swift in Sources */,
 				EB400ECE2817ACE00085787D /* SceneDelegate.swift in Sources */,
 			);
